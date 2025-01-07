@@ -39,7 +39,7 @@ The Drive(s) will be Auto-Mounted to `/run/media/deck/[LABEL]` eg `/run/media/de
 
 ## Via Curl (One Line Install)
 
-In Konsole type `curl -sSL https://raw.githubusercontent.com/scawp/Steam-Deck.Mount-External-Drive/main/curl_install.sh | bash`
+In Konsole type `curl -sSL https://raw.githubusercontent.com/srcamarda/steam-deck-auto-mount/main/curl_install.sh | bash`
 
 a `sudo` password is required (run `passwd` if required first)
 
