@@ -9,17 +9,17 @@
 #stop running script if anything returns an error (non-zero exit )
 set -e
 
-repo_url="https://raw.githubusercontent.com/scawp/Steam-Deck.Mount-External-Drive/main"
+repo_url="https://raw.githubusercontent.com/srcamarda/steam-deck-auto-mount/main"
 repo_lib_dir="$repo_url/lib"
 
 tmp_dir="/tmp/scawp.SDMED.install"
 
 rules_install_dir="/etc/udev/rules.d"
 service_install_dir="/etc/systemd/system"
-script_install_dir="/home/deck/.local/share/scawp/SDMED"
+script_install_dir="/home/srcamarda/.local/share/scawp/SDMED"
 
 device_name="$(uname --nodename)"
-user="$(id -u deck)"
+user="$(id -u srcamarda)"
 
 if [ "$device_name" != "steamdeck" ] || [ "$user" != "1000" ]; then
   zenity --question --width=400 \
